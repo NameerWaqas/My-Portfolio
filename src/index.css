@@ -5,9 +5,86 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
-
+html{
+  margin: 0%;
+  padding: 0%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#imgsection{  
+  /* display: f; */
+  /* flex: 1; */
+  display: block;
+ /* align-items: baseline; */
+ margin-bottom: 0%;
+ height: 150px;
+ text-align: center;
+
+}
+#detailsArticle{
+  text-align: center;
+}
+#imgsection>article{  
+  display:inline-block;  
+    width: 75%; 
+   height: 95%;  
+   border-radius: 70%;
+   overflow: hidden;
+   /* margin-top: 5%; */
+   /* margin-bottom: 0%; */
+}
+h2,h3,h4{
+  margin: 0%;
+}
+
+#imgsection img{
+  width: 100%;
+  height: 100%;
+}
+#appBar{
+  display: none;
+}
+a{
+  text-decoration: unset;
+  color: black;
+}
+a:hover{
+  color: rgb(116, 143, 248);
+  font-size: 120%;
+  transition: 50ms
+}
+#imgDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 90vh;
+  font-size: 200%;  
+background-image: url("./Images/backgroundImg.jpg");
+background-size: cover;
+}
+#imageFrame{
+  display: inline-block;
+  width:90%;
+  height: 300px;
+  overflow: hidden;  
+  margin: 2%;
+}
+#workImg{
+  width: inherit;
+  height: inherit;
+}
+
+@media screen and (max-width:599px){
+  #appBar{
+    display: block;
+  }
+  #main{
+    margin-top: 40px;
+  }
 }
