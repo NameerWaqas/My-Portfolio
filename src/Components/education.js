@@ -54,17 +54,17 @@ export default function Education() {
     };
 
     return (
-        <div>
-            <div style={{fontSize:"250%"}}><h1>MY EDUCATION</h1></div>
+        <div style={{textAlign:"justify"}}>
+            <div style={{fontSize:"250%"}}><h1 style={{textAlign:"center"}}>MY EDUCATION</h1></div>
             <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
                     <Typography>Web & Mobile App Development</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Year 2018-2019<br/>
+                        I have done CMAD from a reputed private institution recently in which i gained 
+                        practical knowledge of MERN stack development and mobile application development as well.
           </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -74,9 +74,11 @@ export default function Education() {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                       Year 2018-In progress <br/>
+                       I am doing BSCS from UBIT,University of Karachi. In UBIT there is a 
+                       big oppurtunity for learning if you are keen on interested in CS.headeri learn
+                       computational problem solving,algorithms,data structures,desktop application development
+                       and many more technical tools.
           </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -86,9 +88,8 @@ export default function Education() {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                      Year 2015-2017<br/>
+                      I have done my HSC with Pre-Engineering.
           </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -98,9 +99,8 @@ export default function Education() {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    Year 2013-2015<br/>
+                      I have done my SSC with Science.
           </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>

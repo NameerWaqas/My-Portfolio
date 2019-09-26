@@ -53,11 +53,7 @@ a{
   text-decoration: unset;
   color: black;
 }
-a:hover{
-  color: rgb(116, 143, 248);
-  font-size: 120%;
-  transition: 50ms
-}
+
 #imgDiv{
   width: 100%;
   display: flex;
@@ -71,7 +67,7 @@ background-size: cover;
 #imageFrame{
   display: inline-block;
   width:90%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;  
   margin: 2%;
 }

@@ -19,12 +19,11 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import dummyImg from "../Images/dummyImg.jpg";
 import Home from "./home.js";
 import AboutMe from "./AboutMe.js";
-import { Button } from "reactstrap";
-import Skills from "./skills"
-import Education from "./education"
-import Work from "./work"
-
-
+// import { Button } from "reactstrap";
+import Skills from "./skills";
+import Education from "./education";
+import Work from "./work";
+import Contact from "./contact";
 
 const drawerWidth = 240;
 
@@ -95,6 +94,7 @@ function ResponsiveDrawer(props) {
         </div>
     );
 
+
     return (
         <div className={classes.root}>
             {/* <CssBaseline /> */}
@@ -148,7 +148,8 @@ function ResponsiveDrawer(props) {
                 <div id="1"> <AboutMe /></div>
                 <div id="2"> <Skills /></div>
                 <div id="3"> <Education /></div>
-                <div id="34"> <Work /></div>
+                <div id="4"> <Work /></div>
+                <div id="5"> <Contact /></div>
             </main>
         </div>
     );
