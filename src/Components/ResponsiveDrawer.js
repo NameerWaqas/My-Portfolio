@@ -150,6 +150,8 @@ function ResponsiveDrawer(props) {
                 <div id="3"> <Education /></div>
                 <div id="4"> <Work /></div>
                 <div id="5"> <Contact /></div>
+                
+            {/* <footer><a href="#0"><h1>^</h1></a></footer> */}
             </main>
         </div>
     );
