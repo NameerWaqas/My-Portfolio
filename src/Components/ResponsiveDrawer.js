@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
+// import CssBaseline from '@material-ui/core/CssBaseline';
+// import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
+// import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import dummyImg from "../Images/dummyImg.jpg";
 import Home from "./home.js";
@@ -24,6 +24,7 @@ import Skills from "./skills";
 import Education from "./education";
 import Work from "./work";
 import Contact from "./contact";
+import CV from "../NameerWaqas.pdf"
 
 const drawerWidth = 240;
 
@@ -85,8 +86,9 @@ function ResponsiveDrawer(props) {
 
             <List>
                 {['HOME', 'ABOUT', 'SKILLS', 'EDUCATION', 'WORK', 'CONTACT'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemText primary={<a href={"#" + index}>{text}</a>} style={{ textAlign: "center", fontSize: "80%" }} />
+                   <ListItem a key={text}>
+                       <ListItemText primary={<a href={"#" + index} >{text}</a>}
+                         style={{ textAlign: "center", fontSize: "80%" }}  />
                     </ListItem>
                 ))}
             </List>
@@ -150,7 +152,7 @@ function ResponsiveDrawer(props) {
                 <div id="3"> <Education /></div>
                 <div id="4"> <Work /></div>
                 <div id="5"> <Contact /></div>
-                
+                <a href={CV} download id="CvAnchor">Download CV</a>
             {/* <footer><a href="#0"><h1>^</h1></a></footer> */}
             </main>
         </div>
